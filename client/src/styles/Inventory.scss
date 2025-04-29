@@ -1,0 +1,320 @@
+/* client/src/styles/Inventory.scss */
+/* Stiluri complet rescrise pentru pagina de inventar, adaptate pentru tema dark/light */
+
+.inventory-page {
+  padding-top: 64px;
+  min-height: 100vh;
+  background-color: var(--color-bg-secondary);
+  
+  .page-header {
+    background-color: var(--color-header-bg);
+    color: var(--color-header-text);
+    padding: 40px 0;
+    margin-bottom: 30px;
+    
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+      
+      h1 {
+        font-size: 2rem;
+        font-weight: 600;
+        margin-bottom: 12px;
+        letter-spacing: -0.5px;
+      }
+      
+      p {
+        font-size: 1.1rem;
+        opacity: 0.8;
+        max-width: 600px;
+        margin: 0;
+      }
+    }
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .inventory-content {
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    gap: 20px;
+    margin: 0 auto 40px;
+    position: relative;
+    
+    // Filters Panel
+    .filters-panel {
+      background-color: var(--color-bg-card);
+      border-radius: 12px;
+      box-shadow: 0 4px 10px var(--color-shadow);
+      padding: 20px;
+      height: fit-content;
+      margin-bottom: 20px;
+      
+      h2 {
+        font-size: 1.2rem;
+        font-weight: 600;
+        margin-bottom: 20px;
+        color: var(--color-text-primary);
+        padding-bottom: 10px;
+        border-bottom: 1px solid var(--color-border);
+      }
+      
+      .filter-group {
+        margin-bottom: 20px;
+        
+        label {
+          display: block;
+          font-size: 0.95rem;
+          font-weight: 500;
+          margin-bottom: 8px;
+          color: var(--color-text-primary);
+        }
+        
+        select, input {
+          width: 100%;
+          padding: 10px;
+          border: 1px solid var(--color-border);
+          border-radius: 6px;
+          font-size: 0.9rem;
+          color: var(--color-text-primary);
+          background-color: var(--color-bg-primary);
+          
+          &:focus {
+            outline: none;
+            border-color: var(--color-primary);
+          }
+        }
+        
+        select {
+          appearance: none;
+          background-repeat: no-repeat;
+          background-position: calc(100% - 12px) center;
+          padding-right: 30px;
+        }
+        
+        .range-inputs {
+          display: flex;
+          align-items: center;
+          gap: 6px;
+          
+          input {
+            flex: 1;
+          }
+          
+          .range-separator {
+            color: var(--color-text-secondary);
+            font-weight: 500;
+          }
+        }
+      }
+      
+      .filter-actions {
+        display: flex;
+        gap: 10px;
+        margin-top: 20px;
+        
+        button {
+          flex: 1;
+          padding: 10px;
+          border-radius: 6px;
+          font-size: 0.9rem;
+          font-weight: 500;
+          cursor: pointer;
+          transition: all 0.2s ease;
+        }
+        
+        .btn-apply {
+          background-color: var(--color-primary);
+          color: var(--color-button-text);
+          border: none;
+          
+          &:hover {
+            background-color: var(--color-primary-hover);
+          }
+        }
+        
+        .btn-reset {
+          background-color: transparent;
+          color: var(--color-primary);
+          border: 1px solid var(--color-primary);
+          
+          &:hover {
+            background-color: rgba(var(--color-primary-rgb), 0.1);
+          }
+        }
+      }
+    }
+    
+    // Cars Results
+    .cars-results {
+      background-color: var(--color-bg-card);
+      border-radius: 12px;
+      box-shadow: 0 4px 10px var(--color-shadow);
+      padding: 20px;
+      
+      .results-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+        padding-bottom: 15px;
+        border-bottom: 1px solid var(--color-border);
+        
+        .results-count {
+          font-size: 0.95rem;
+          color: var(--color-text-secondary);
+        }
+        
+        .results-sort {
+          select.sort-select {
+            padding: 8px 30px 8px 10px;
+            border: 1px solid var(--color-border);
+            border-radius: 6px;
+            font-size: 0.9rem;
+            color: var(--color-text-primary);
+            background-color: var(--color-bg-primary);
+            appearance: none;
+            background-repeat: no-repeat;
+            background-position: calc(100% - 12px) center;
+            cursor: pointer;
+            
+            &:focus {
+              outline: none;
+              border-color: var(--color-primary);
+            }
+            
+            option {
+              color: var(--color-text-primary);
+              background-color: var(--color-bg-primary);
+              padding: 5px;
+            }
+          }
+        }
+      }
+      
+      .cars-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 20px;
+      }
+      
+      .no-results {
+        text-align: center;
+        padding: 40px 0;
+        color: var(--color-text-secondary);
+        font-size: 1rem;
+      }
+      
+      .loading-spinner {
+        height: 50px;
+        width: 50px;
+        margin: 40px auto;
+        border: 3px solid rgba(var(--color-text-secondary-rgb), 0.2);
+        border-radius: 50%;
+        border-top-color: var(--color-primary);
+        animation: spin 1s linear infinite;
+      }
+      
+      @keyframes spin {
+        to { transform: rotate(360deg); }
+      }
+      
+      .error-message {
+        text-align: center;
+        padding: 20px;
+        margin: 20px 0;
+        background-color: rgba(255, 59, 48, 0.1);
+        color: #ff3b30;
+        border-radius: 8px;
+      }
+    }
+  }
+}
+
+// Stiluri specifice pentru dark mode
+[data-theme="dark"] {
+  .inventory-page {
+    .filters-panel, 
+    .cars-results {
+      select {
+        // Săgeată albă pentru selecturi în dark mode
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' fill='%23f5f5f7' viewBox='0 0 16 16'%3E%3Cpath d='M7.247 11.14L2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z'/%3E%3C/svg%3E");
+      }
+    }
+  }
+}
+
+// Stiluri specifice pentru light mode
+[data-theme="light"] {
+  .inventory-page {
+    .filters-panel, 
+    .cars-results {
+      select {
+        // Săgeată neagră pentru selecturi în light mode
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' fill='%231d1d1f' viewBox='0 0 16 16'%3E%3Cpath d='M7.247 11.14L2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z'/%3E%3C/svg%3E");
+      }
+    }
+  }
+}
+
+// Responsive styles
+@media (max-width: 992px) {
+  .inventory-page {
+    .inventory-content {
+      grid-template-columns: 1fr;
+      
+      .filters-panel {
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .inventory-page {
+    .page-header {
+      padding: 30px 0;
+      
+      h1 {
+        font-size: 1.8rem;
+      }
+    }
+    
+    .filter-group {
+      .range-inputs {
+        flex-direction: column;
+        
+        .range-separator {
+          display: none;
+        }
+        
+        input {
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .inventory-page {
+    .results-header {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 10px;
+      
+      .results-sort {
+        width: 100%;
+        
+        select {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

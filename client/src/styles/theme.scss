@@ -1,0 +1,590 @@
+/* În client/src/styles/theme.scss */
+
+/* Variabile pentru culori */
+:root {
+    /* Culori pentru light mode (default) */
+    --color-bg-primary: #ffffff;
+    --color-bg-secondary: #f5f5f7;
+    --color-bg-card: #ffffff;
+    --color-text-primary: #1d1d1f;
+    --color-text-secondary: #86868b;
+    --color-border: #e6e6e6;
+    --color-primary: #0066cc;
+    --color-primary-hover: #004499;
+    --color-accent: #0066cc;
+    --color-header-bg: #1d1d1f;
+    --color-header-text: #f5f5f7;
+    --color-shadow: rgba(0, 0, 0, 0.1);
+    --color-card-shadow: rgba(0, 0, 0, 0.05);
+    --color-button-bg: #0066cc;
+    --color-button-text: #ffffff;
+  }
+  
+  /* Culori pentru dark mode */
+  [data-theme="dark"] {
+    --color-bg-primary: #121212;
+    --color-bg-secondary: #1e1e1e;
+    --color-bg-card: #2d2d2d;
+    --color-text-primary: #f5f5f7;
+    --color-text-secondary: #a1a1a6;
+    --color-border: #3d3d3d;
+    --color-primary: #0a84ff;
+    --color-primary-hover: #409cff;
+    --color-accent: #0a84ff;
+    --color-header-bg: #000000;
+    --color-header-text: #f5f5f7;
+    --color-shadow: rgba(0, 0, 0, 0.3);
+    --color-card-shadow: rgba(0, 0, 0, 0.2);
+    --color-button-bg: #0a84ff;
+    --color-button-text: #ffffff;
+  }
+  
+  /* Tranziții pentru schimbările de temă */
+  body, button, a, nav, footer, header, div, section, input, select {
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  /* Stilul pentru butonul de comutare a temei */
+  .theme-toggle {
+    background: none;
+    border: none;
+    color: var(--color-header-text);
+    font-size: 1.2rem;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.1);
+    }
+    
+    .icon {
+      transition: transform 0.3s ease;
+    }
+    
+    &:hover .icon {
+      transform: rotate(30deg);
+    }
+  }
+  
+  /* Aplicarea variabilelor de culoare la elementele specifice */
+  
+  // Body background
+  body {
+    background-color: var(--color-bg-primary);
+    color: var(--color-text-primary);
+  }
+  
+  // Header
+  .navbar {
+    background-color: var(--color-header-bg);
+    
+    &.navbar-solid {
+      background-color: var(--color-header-bg);
+    }
+    
+    .nav-link {
+      color: var(--color-header-text);
+    }
+    
+    .language-selector button {
+      color: var(--color-header-text);
+    }
+  }
+  
+  // Page sections
+  .page-header {
+    background-color: var(--color-header-bg);
+    color: var(--color-header-text);
+  }
+  
+  // Cards
+  .car-card {
+    background-color: var(--color-bg-card);
+    box-shadow: 0 8px 20px var(--color-card-shadow);
+    
+    .car-info {
+      .car-title {
+        color: var(--color-text-primary);
+      }
+      
+      .car-brand {
+        color: var(--color-text-secondary);
+      }
+      
+      .car-specs .spec {
+        .spec-label {
+          color: var(--color-text-secondary);
+        }
+        
+        .spec-value {
+          color: var(--color-text-primary);
+        }
+      }
+      
+      .car-price {
+        color: var(--color-text-primary);
+      }
+      
+      .view-details {
+        color: var(--color-primary);
+      }
+    }
+  }
+  
+  // Car details page
+  .car-details-page {
+    background-color: var(--color-bg-secondary);
+    
+    .car-title-section, 
+    .car-details-content, 
+    .description-section, 
+    .additional-section {
+      background-color: var(--color-bg-card);
+      box-shadow: 0 4px 10px var(--color-shadow);
+      
+      h1, h2, h3 {
+        color: var(--color-text-primary);
+      }
+      
+      .car-brand, 
+      .spec-label,
+      .car-specs .spec-item .spec-label {
+        color: var(--color-text-secondary);
+      }
+      
+      .car-price,
+      .spec-value,
+      .car-specs .spec-item .spec-value,
+      .description-content p,
+      .feature-text {
+        color: var(--color-text-primary);
+      }
+    }
+    
+    .navigation .back-link {
+      color: var(--color-primary);
+      
+      &:hover {
+        color: var(--color-primary-hover);
+      }
+    }
+    
+    .contact-btn {
+      &.primary {
+        background-color: var(--color-button-bg);
+        color: var(--color-button-text);
+        
+        &:hover {
+          background-color: var(--color-primary-hover);
+        }
+      }
+      
+      &.secondary {
+        background-color: var(--color-bg-secondary);
+        color: var(--color-text-primary);
+        
+        &:hover {
+          background-color: var(--color-border);
+        }
+      }
+    }
+  }
+  
+  // Inventory page
+  .inventory-page {
+    background-color: var(--color-bg-secondary);
+    
+    .filters-panel, 
+    .cars-results {
+      background-color: var(--color-bg-card);
+      box-shadow: 0 4px 10px var(--color-shadow);
+      
+      h2 {
+        color: var(--color-text-primary);
+      }
+      
+      label {
+        color: var(--color-text-primary);
+      }
+      
+      select, input {
+        border-color: var(--color-border);
+        background-color: var(--color-bg-primary);
+        color: var(--color-text-primary);
+        
+        &:focus {
+          border-color: var(--color-primary);
+        }
+      }
+      
+      .btn-apply {
+        background-color: var(--color-button-bg);
+        color: var(--color-button-text);
+        
+        &:hover {
+          background-color: var(--color-primary-hover);
+        }
+      }
+      
+      .btn-reset {
+        color: var(--color-primary);
+        border-color: var(--color-primary);
+        
+        &:hover {
+          background-color: rgba(var(--color-primary-rgb), 0.1);
+        }
+      }
+    }
+    /* În client/src/styles/theme.scss */
+/* Adaugă aceste stiluri pentru elementele de formular */
+
+// Stiluri pentru elementele de formular
+select, 
+input[type="text"], 
+input[type="number"], 
+input[type="email"], 
+input[type="tel"],
+input[type="password"],
+textarea {
+  background-color: var(--color-bg-primary);
+  color: var(--color-text-primary);
+  border: 1px solid var(--color-border);
+  
+  &:focus {
+    border-color: var(--color-primary);
+    outline: none;
+  }
+  
+  &::placeholder {
+    color: var(--color-text-secondary);
+  }
+  
+  // Stiluri specifice pentru select
+  &[data-theme="dark"] {
+    background-color: var(--color-bg-primary);
+    color: var(--color-text-primary);
+    
+    option {
+      background-color: var(--color-bg-primary);
+      color: var(--color-text-primary);
+    }
+  }
+}
+
+// Asigură-te că opțiunile din select sunt vizibile în ambele teme
+option {
+  background-color: var(--color-bg-primary);
+  color: var(--color-text-primary);
+}
+
+// Stiluri specifice pentru dropdown-uri în modul întunecat
+[data-theme="dark"] {
+  select {
+    background-color: var(--color-bg-card);
+    color: var(--color-text-primary);
+    border-color: var(--color-border);
+    
+    option {
+      background-color: var(--color-bg-card);
+      color: var(--color-text-primary);
+    }
+  }
+  
+  // Asigură-te că săgețile din dropdown-uri sunt vizibile
+  .results-sort select,
+  .filter-group select {
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' fill='%23f5f5f7' viewBox='0 0 16 16'%3E%3Cpath d='M7.247 11.14L2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: calc(100% - 12px) center;
+    padding-right: 30px;
+  }
+}
+
+[data-theme="light"] {
+  select {
+    background-color: var(--color-bg-primary);
+    color: var(--color-text-primary);
+    border-color: var(--color-border);
+    
+    option {
+      background-color: var(--color-bg-primary);
+      color: var(--color-text-primary);
+    }
+  }
+  
+  // Asigură-te că săgețile din dropdown-uri sunt vizibile
+  .results-sort select,
+  .filter-group select {
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' fill='%231d1d1f' viewBox='0 0 16 16'%3E%3Cpath d='M7.247 11.14L2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: calc(100% - 12px) center;
+    padding-right: 30px;
+  }
+}
+
+// Îmbunătățește vizibilitatea butoanelor în form-uri
+.btn-apply,
+.btn-reset,
+input[type="submit"],
+button[type="submit"] {
+  cursor: pointer;
+  border: none;
+  
+  &:hover {
+    filter: brightness(1.1);
+  }
+  
+  &:active {
+    transform: translateY(1px);
+  }
+}
+
+// Specifică mai bine stilurile pentru pagina de inventar
+.inventory-page {
+  .results-sort select {
+    padding: 8px 30px 8px 10px;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    border: 1px solid var(--color-border);
+    color: var(--color-text-primary);
+    background-color: var(--color-bg-primary);
+    
+    &:focus {
+      border-color: var(--color-primary);
+    }
+  }
+  
+  .filter-group {
+    label {
+      color: var(--color-text-primary);
+    }
+    
+    select,
+    input {
+      color: var(--color-text-primary);
+      background-color: var(--color-bg-primary);
+      border-color: var(--color-border);
+      
+      &:focus {
+        border-color: var(--color-primary);
+      }
+    }
+  }
+}
+/* În client/src/styles/theme.scss */
+/* Adaugă aceste reguli globale pentru a asigura compatibilitatea cu tema */
+
+/* Culori RGB pentru transparențe */
+:root {
+    --color-primary-rgb: 0, 102, 204;
+    --color-text-primary-rgb: 29, 29, 31;
+    --color-text-secondary-rgb: 134, 134, 139;
+  }
+  
+  [data-theme="dark"] {
+    --color-primary-rgb: 10, 132, 255;
+    --color-text-primary-rgb: 245, 245, 247;
+    --color-text-secondary-rgb: 161, 161, 166;
+  }
+  
+  /* Ajustări pentru componente comune */
+  
+  // Butoane
+  .btn-primary, 
+  .btn-secondary, 
+  .btn-outline,
+  .contact-btn {
+    &:focus {
+      outline: none;
+    }
+  }
+  
+  // Loading spinner
+  .loading-spinner {
+    border-color: rgba(var(--color-text-secondary-rgb), 0.2);
+    border-top-color: var(--color-primary);
+  }
+  
+  // Carduri
+  .car-card {
+    transition: all 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    
+    &:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 12px 30px var(--color-shadow);
+    }
+  }
+  
+  // Placeholder pentru imagini
+  .placeholder-image {
+    background-color: var(--color-bg-secondary);
+    color: var(--color-text-secondary);
+  }
+  
+  // Modaluri și popups
+  .modal, 
+  .popup {
+    background-color: var(--color-bg-primary);
+    color: var(--color-text-primary);
+    border: 1px solid var(--color-border);
+    box-shadow: 0 10px 25px var(--color-shadow);
+  }
+  
+  // Mesaje de eroare
+  .error-message {
+    background-color: rgba(255, 59, 48, 0.1);
+    color: #ff3b30;
+  }
+  
+  // Asigură-te că textul din liste este vizibil
+  ul, ol, dl {
+    color: var(--color-text-primary);
+  }
+  
+  // Îmbunătățiri pentru pagina Admin
+  .admin-page {
+    background-color: var(--color-bg-secondary);
+    
+    .login-container,
+    .car-form-container,
+    .cars-list {
+      background-color: var(--color-bg-card);
+      color: var(--color-text-primary);
+      box-shadow: 0 4px 20px var(--color-shadow);
+    }
+    
+    .data-table {
+      th {
+        background-color: var(--color-bg-secondary);
+        color: var(--color-text-primary);
+      }
+      
+      td {
+        color: var(--color-text-primary);
+        border-bottom-color: var(--color-border);
+      }
+    }
+  }
+  
+  // Alte ajustări specifice pentru inventar
+  .inventory-page {
+    .no-results {
+      padding: 40px 0;
+      text-align: center;
+      color: var(--color-text-secondary);
+      font-size: 1rem;
+    }
+    
+    // Asigură-te că stilurile pentru dropdown-uri sunt specifice
+    .filters-panel,
+    .cars-results {
+      select, option {
+        color: var(--color-text-primary);
+        background-color: var(--color-bg-primary);
+      }
+    }
+  }
+  
+  // Ajustări pentru formularul de contact
+  .contact-page {
+    .contact-form-container,
+    .contact-info {
+      background-color: var(--color-bg-card);
+      color: var(--color-text-primary);
+      
+      h2 {
+        color: var(--color-text-primary);
+      }
+      
+      label, p {
+        color: var(--color-text-primary);
+      }
+    }
+    
+    .contact-info {
+      .info-item {
+        .info-content h3 {
+          color: var(--color-text-primary);
+        }
+        
+        .info-content p {
+          color: var(--color-text-secondary);
+        }
+      }
+    }
+  }
+  
+  // Asigură tranziții line între teme
+  body {
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  // Curbe și alte forme
+  svg path {
+    transition: fill 0.3s ease, stroke 0.3s ease;
+  }
+  
+  // Prevenirea clipirii textului la schimbarea temei
+  * {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+    .results-count {
+      color: var(--color-text-secondary);
+    }
+    
+    .no-results {
+      color: var(--color-text-secondary);
+    }
+  }
+  
+  // Footer
+  .site-footer {
+    background-color: var(--color-header-bg);
+    color: var(--color-header-text);
+    
+    .footer-tagline {
+      color: var(--color-text-secondary);
+    }
+    
+    .footer-links {
+      .footer-column {
+        h3 {
+          color: var(--color-header-text);
+        }
+        
+        ul li a {
+          color: var(--color-text-secondary);
+          
+          &:hover {
+            color: var(--color-header-text);
+          }
+        }
+      }
+    }
+    
+    .footer-bottom {
+      border-top-color: var(--color-border);
+      
+      .copyright {
+        color: var(--color-text-secondary);
+      }
+      
+      .footer-legal a {
+        color: var(--color-text-secondary);
+        
+        &:hover {
+          color: var(--color-header-text);
+        }
+      }
+    }
+  }

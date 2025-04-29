@@ -1,0 +1,180 @@
+{
+    "footer": {
+      "tagline": "Ihr vertrauenswürdiger Partner für Premium-Gebrauchtwagen in Italien und ganz Europa",
+      "navigation": "Navigation",
+      "contactInfo": "Kontaktinformationen",
+      "businessHours": "Öffnungszeiten",
+      "rightsReserved": "Alle Rechte vorbehalten.",
+      "privacyPolicy": "Datenschutzrichtlinie",
+      "terms": "Allgemeine Geschäftsbedingungen",
+      "cookiePolicy": "Cookie-Richtlinie"
+    },
+    
+    "navbar": {
+      "home": "Startseite",
+      "inventory": "Fahrzeugbestand",
+      "contact": "Kontakt"
+    },
+    
+    "home": {
+      "hero": {
+        "title": "Finden Sie Ihr perfektes Fahrzeug",
+        "subtitle": "Premium-Auswahl an Qualitätsgebrauchtwagen zu besten Preisen",
+        "cta": "Fahrzeugbestand durchsuchen"
+      },
+      "about": {
+        "title": "Über AUTO ONE",
+        "subtitle": "Ihr vertrauenswürdiger Partner bei der Suche nach dem perfekten Auto",
+        "description1": "Gegründet von Alessandro mit einer Leidenschaft für Qualitätsfahrzeuge, liefert AUTO ONE seit über 15 Jahren Premium-Gebrauchtwagen an Kunden in ganz Italien und Europa.",
+        "description2": "Wir wählen jedes Fahrzeug in unserem Bestand sorgfältig aus und prüfen es, um sicherzustellen, dass es unseren hohen Standards für Qualität, Zuverlässigkeit und Wert entspricht.",
+        "contact": "Kontaktieren Sie uns"
+      },
+      "featured": {
+        "title": "Ausgewählte Fahrzeuge",
+        "subtitle": "Durchsuchen Sie unsere Premium-Auswahl an Top-Fahrzeugen",
+        "viewAll": "Alle Fahrzeuge anzeigen"
+      },
+      "whyChoose": {
+        "title": "Warum uns wählen",
+        "subtitle": "Wir bieten mehr als nur Autos",
+        "feature1": {
+          "title": "Garantierte Qualität",
+          "description": "Jedes Fahrzeug wird einer gründlichen Inspektion unterzogen, bevor es in unseren Bestand aufgenommen wird"
+        },
+        "feature2": {
+          "title": "Fachkundiger Service",
+          "description": "Unser sachkundiges Personal bietet personalisierte Unterstützung, um Ihre Bedürfnisse zu erfüllen"
+        },
+        "feature3": {
+          "title": "Garantieabdeckung",
+          "description": "Seelenfrieden mit unseren umfassenden Garantieoptionen"
+        }
+      },
+      "cta": {
+        "title": "Bereit, Ihr nächstes Auto zu finden?",
+        "subtitle": "Durchsuchen Sie unseren umfangreichen Bestand und finden Sie die perfekte Übereinstimmung für Ihre Bedürfnisse",
+        "button": "Fahrzeugbestand erkunden"
+      }
+    },
+    
+    "inventory": {
+      "title": "Unser Fahrzeugbestand",
+      "subtitle": "Durchsuchen Sie unsere Auswahl an Qualitätsgebrauchtwagen",
+      "errorFetching": "Fehler beim Laden der Fahrzeuge. Bitte versuchen Sie es erneut.",
+      "noResults": "Keine Fahrzeuge entsprechen Ihren Kriterien. Bitte passen Sie Ihre Filter an.",
+      "resultsCount": "{{count}} Fahrzeuge gefunden",
+      "filters": {
+        "title": "Filter",
+        "brand": "Marke",
+        "allBrands": "Alle Marken",
+        "year": "Jahr",
+        "price": "Preis",
+        "mileage": "Kilometerstand",
+        "min": "Min",
+        "max": "Max",
+        "apply": "Filter anwenden",
+        "reset": "Zurücksetzen",
+        "mileageUnit": "km",
+        "priceUnit": "€",
+        "yearRange": "Jahr {{min}} - {{max}}",
+        "allFuels": "Alle Kraftstofftypen",
+        "allTransmissions": "Alle Getriebe",
+        "fuel": "Kraftstoff",
+        "transmission": "Getriebe",
+        "all": "Alle",
+        "petrol": "Benzin",
+        "diesel": "Diesel",
+        "electric": "Elektro",
+        "hybrid": "Hybrid"
+      },
+      "sort": {
+        "newest": "Neueste zuerst",
+        "priceAsc": "Preis: Aufsteigend",
+        "priceDesc": "Preis: Absteigend"
+      }
+    },
+    
+    "car": {
+      "id": "ID",
+      "title": "Titel",
+      "brand": "Marke",
+      "price": "Preis",
+      "year": "Jahr",
+      "mileage": "Kilometerstand",
+      "fuel": "Kraftstofftyp",
+      "transmission": "Getriebe",
+      "power": "Leistung",
+      "color": "Farbe",
+      "description": "Beschreibung",
+      "viewDetails": "Details anzeigen"
+    },
+    
+    "carDetails": {
+      "backToInventory": "Zurück zum Fahrzeugbestand",
+      "description": "Fahrzeugbeschreibung",
+      "features": "Merkmale & Ausstattung",
+      "contactUs": "Kontaktieren Sie uns",
+      "callUs": "Rufen Sie uns an",
+      "whatsappMessage": "Ich interessiere mich für",
+      "noImages": "Keine Bilder verfügbar",
+      "errorFetching": "Fehler beim Laden der Fahrzeugdetails. Bitte versuchen Sie es erneut.",
+      "notFound": "Fahrzeug nicht gefunden."
+    },
+    
+    "contact": {
+      "title": "Kontaktieren Sie uns",
+      "subtitle": "Wir sind hier, um Ihnen bei allen Fragen zu helfen",
+      "formTitle": "Senden Sie uns eine Nachricht",
+      "infoTitle": "Kontaktinformationen",
+      "name": "Name",
+      "email": "E-Mail",
+      "phone": "Telefon",
+      "message": "Nachricht",
+      "gdprConsent": "Ich stimme zu, dass AUTO ONE meine persönlichen Daten gemäß der Datenschutzrichtlinie verarbeitet",
+      "gdprRequired": "Bitte akzeptieren Sie die Datenschutzrichtlinie vor dem Absenden",
+      "send": "Nachricht senden",
+      "sending": "Senden...",
+      "successMessage": "Vielen Dank! Ihre Nachricht wurde erfolgreich gesendet. Wir werden uns bald bei Ihnen melden.",
+      "sendError": "Fehler beim Senden der Nachricht. Bitte versuchen Sie es später erneut.",
+      "address": "Adresse",
+      "phoneTitle": "Telefon",
+      "emailTitle": "E-Mail",
+      "hours": "Geschäftszeiten",
+      "weekdays": "Montag-Freitag",
+      "saturday": "Samstag",
+      "sunday": "Sonntag",
+      "closed": "Geschlossen",
+      "findUs": "Finden Sie uns"
+    },
+    
+    "admin": {
+      "title": "Admin-Panel",
+      "loginTitle": "Admin-Login",
+      "email": "E-Mail",
+      "password": "Passwort",
+      "login": "Anmelden",
+      "loggingIn": "Anmeldung...",
+      "loginError": "Ungültige E-Mail oder Passwort",
+      "logout": "Abmelden",
+      "cars": "Autos verwalten",
+      "messages": "Nachrichten",
+      "carsList": "Autoliste",
+      "messagesList": "Nachrichtenliste",
+      "noCars": "Noch keine Autos im Bestand",
+      "noMessages": "Noch keine Nachrichten",
+      "addCar": "Neues Auto hinzufügen",
+      "editCar": "Auto bearbeiten",
+      "imagesInfo": "Bilder (eine URL pro Zeile)",
+      "imagesPlaceholder": "https://beispiel.de/bild1.jpg\nhttps://beispiel.de/bild2.jpg",
+      "save": "Speichern",
+      "saving": "Speichern...",
+      "cancel": "Abbrechen",
+      "edit": "Bearbeiten",
+      "delete": "Löschen",
+      "actions": "Aktionen",
+      "confirmDelete": "Sind Sie sicher, dass Sie dieses Auto löschen möchten?",
+      "fetchError": "Fehler beim Abrufen der Daten. Bitte versuchen Sie es erneut.",
+      "saveError": "Fehler beim Speichern des Autos. Bitte versuchen Sie es erneut.",
+      "deleteError": "Fehler beim Löschen des Autos. Bitte versuchen Sie es erneut."
+    }
+  }

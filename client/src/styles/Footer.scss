@@ -1,0 +1,197 @@
+.site-footer {
+    background-color: #1d1d1f;
+    color: #f5f5f7;
+    padding: 60px 0 24px;
+    
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+    
+    .footer-content {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      gap: 60px;
+      margin-bottom: 40px;
+      
+      @media (max-width: 768px) {
+        grid-template-columns: 1fr;
+        gap: 40px;
+      }
+    }
+    
+    .footer-brand {
+      .footer-logo {
+        display: inline-block;
+        margin-bottom: 20px;
+        
+        img {
+          height: 40px;
+          width: auto;
+        }
+      }
+      
+      .footer-tagline {
+        font-size: 0.95rem;
+        line-height: 1.6;
+        color: rgba(245, 245, 247, 0.8);
+        margin-bottom: 24px;
+      }
+      
+      .social-links {
+        display: flex;
+        gap: 16px;
+        
+        a {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 40px;
+          height: 40px;
+          background-color: rgba(255, 255, 255, 0.1);
+          color: #f5f5f7;
+          border-radius: 50%;
+          transition: all 0.3s ease;
+          
+          &:hover {
+            background-color: #0066cc;
+            transform: translateY(-3px);
+          }
+          
+          i {
+            font-size: 1.2rem;
+          }
+        }
+      }
+    }
+    
+    .footer-links {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 40px;
+      
+      @media (max-width: 992px) {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      
+      @media (max-width: 576px) {
+        grid-template-columns: 1fr;
+        gap: 30px;
+      }
+      
+      .footer-column {
+        h3 {
+          font-size: 1.1rem;
+          font-weight: 600;
+          margin-bottom: 20px;
+          color: #f5f5f7;
+        }
+        
+        ul {
+          list-style: none;
+          padding: 0;
+          margin: 0;
+          
+          li {
+            margin-bottom: 12px;
+            
+            a {
+              color: rgba(245, 245, 247, 0.8);
+              text-decoration: none;
+              transition: color 0.2s ease;
+              
+              &:hover {
+                color: #f5f5f7;
+                text-decoration: underline;
+              }
+            }
+          }
+        }
+        
+        .contact-info {
+          li {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 16px;
+            
+            i {
+              font-size: 1.1rem;
+              margin-right: 12px;
+              color: #0066cc;
+            }
+            
+            span, a {
+              color: rgba(245, 245, 247, 0.8);
+              text-decoration: none;
+              transition: color 0.2s ease;
+              line-height: 1.5;
+            }
+            
+            a:hover {
+              color: #f5f5f7;
+              text-decoration: underline;
+            }
+          }
+        }
+        
+        .business-hours {
+          li {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 12px;
+            
+            .day {
+              color: rgba(245, 245, 247, 0.8);
+            }
+            
+            .hours {
+              color: #f5f5f7;
+              font-weight: 500;
+            }
+          }
+        }
+      }
+    }
+    
+    .footer-bottom {
+      padding-top: 24px;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      
+      @media (max-width: 768px) {
+        flex-direction: column;
+        gap: 16px;
+        text-align: center;
+      }
+      
+      .copyright {
+        font-size: 0.85rem;
+        color: rgba(245, 245, 247, 0.6);
+      }
+      
+      .footer-legal {
+        display: flex;
+        gap: 24px;
+        
+        @media (max-width: 576px) {
+          flex-direction: column;
+          gap: 12px;
+        }
+        
+        a {
+          font-size: 0.85rem;
+          color: rgba(245, 245, 247, 0.6);
+          text-decoration: none;
+          transition: color 0.2s ease;
+          
+          &:hover {
+            color: #f5f5f7;
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }

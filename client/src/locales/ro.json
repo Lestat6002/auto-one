@@ -1,0 +1,234 @@
+{
+    "footer": {
+      "tagline": "Partenerul tău de încredere pentru mașini second-hand premium în Italia și în toată Europa",
+      "navigation": "Navigare",
+      "contactInfo": "Informații de Contact",
+      "businessHours": "Program de Lucru",
+      "rightsReserved": "Toate drepturile rezervate.",
+      "privacyPolicy": "Politica de Confidențialitate",
+      "terms": "Termeni și Condiții",
+      "cookiePolicy": "Politica de Cookie-uri"
+    },
+    
+    "navbar": {
+      "home": "Acasă",
+      "inventory": "Parc Auto",
+      "contact": "Contact"
+    },
+    
+    "home": {
+      "hero": {
+        "title": "Găsește Vehiculul Perfect",
+        "subtitle": "Selecție premium de mașini second-hand de calitate la cele mai bune prețuri",
+        "cta": "Explorează Parcul Auto"
+      },
+      "about": {
+        "title": "Despre AUTO ONE",
+        "subtitle": "Partenerul tău de încredere în găsirea mașinii perfecte",
+        "description1": "Fondată de Alessandro cu pasiune pentru vehicule de calitate, AUTO ONE furnizează mașini second-hand premium clienților din Italia și Europa de peste 15 ani.",
+        "description2": "Selectăm și verificăm cu atenție fiecare vehicul din inventarul nostru pentru a ne asigura că îndeplinește standardele noastre înalte de calitate, fiabilitate și valoare.",
+        "contact": "Contactează-ne"
+      },
+      "featured": {
+        "title": "Vehicule Recomandate",
+        "subtitle": "Explorează selecția noastră premium de vehicule de top",
+        "viewAll": "Vezi Toate Vehiculele"
+      },
+      "whyChoose": {
+        "title": "De Ce Să Ne Alegi",
+        "subtitle": "Oferim mai mult decât mașini",
+        "feature1": {
+          "title": "Calitate Garantată",
+          "description": "Fiecare vehicul este supus unei inspecții amănunțite înainte de a intra în inventarul nostru"
+        },
+        "feature2": {
+          "title": "Serviciu Expert",
+          "description": "Personalul nostru experimentat oferă asistență personalizată pentru a răspunde nevoilor tale"
+        },
+        "feature3": {
+          "title": "Acoperire Garanție",
+          "description": "Liniște sufletească cu opțiunile noastre cuprinzătoare de garanție"
+        }
+      },
+      "cta": {
+        "title": "Gata să Găsești Următoarea Ta Mașină?",
+        "subtitle": "Navighează prin inventarul nostru extins și găsește potrivirea perfectă pentru nevoile tale",
+        "button": "Explorează Parcul Auto"
+      }
+    },
+    
+    "inventory": {
+      "title": "Parcul Nostru Auto",
+      "subtitle": "Explorează selecția noastră de mașini second-hand de calitate",
+      "errorFetching": "Eroare la încărcarea vehiculelor. Vă rugăm să încercați din nou.",
+      "noResults": "Niciun vehicul nu corespunde criteriilor tale. Te rugăm să ajustezi filtrele.",
+      "resultsCount": "{{count}} vehicule găsite",
+      "filters": {
+        "title": "Filtre",
+        "brand": "Marcă",
+        "allBrands": "Toate Mărcile",
+        "year": "An",
+        "price": "Preț",
+        "mileage": "Kilometraj",
+        "min": "Min",
+        "max": "Max",
+        "apply": "Aplică Filtre",
+        "reset": "Resetează",
+        "search": "Caută",
+        "searchPlaceholder": "Caută vehicule...",
+        "searchButton": "Caută",
+        "searchError": "Eroare la căutarea vehiculelor. Te rugăm să încerci din nou.",
+        "searchNoResults": "Niciun vehicul găsit pentru căutarea ta. Te rugăm să încerci cu alte cuvinte cheie.",
+        "allFuels": "Toate tipurile de combustibil",
+        "allTransmissions": "Toate transmisiile",
+        "fuel": "Tip combustibil",
+        "transmission": "Transmisie",
+        "allColors": "Toate culorile",
+        "color": "Culoare",
+        "clearFilters": "Șterge filtrele"
+      },
+      "sort": {
+        "newest": "Cele mai noi",
+        "priceAsc": "Preț: Crescător",
+        "priceDesc": "Preț: Descrescător"
+      }
+    },
+    
+    "car": {
+      "id": "ID",
+      "title": "Titlu",
+      "brand": "Marcă",
+      "price": "Preț",
+      "year": "An",
+      "mileage": "Kilometraj",
+      "fuel": "Combustibil",
+      "transmission": "Transmisie",
+      "power": "Putere",
+      "color": "Culoare",
+      "description": "Descriere",
+      "viewDetails": "Vezi Detalii",
+      "model": "Model",
+      "engineSize": "Capacitate motor",
+      "fuelTypes": {
+        "petrol": "Benzină",
+        "diesel": "Diesel",
+        "hybrid": "Hibrid",
+        "electric": "Electric",
+        "lpg": "GPL"
+    },
+    "transmissionTypes": {
+      "manual": "Manuală",
+      "automatic": "Automată",
+      "semiAuto": "Semi-automată"
+    },
+      "features": {
+        "airConditioning": "Aer condiționat",
+        "leatherSeats": "Scaune din piele",
+        "parkingSensors": "Senzori de parcare",
+        "cruiseControl": "Tempomat",
+        "heatedSeats": "Scaune încălzite",
+        "backupCamera": "Cameră de marșarier",
+        "keylessEntry": "Intrare fără cheie",
+        "abs": "ABS",
+        "esp": "ESP",
+        "ac": "Aer condiționat",
+        "auto_ac": "Climatronic",
+        "leather": "Tapițerie piele",
+        "electric_windows": "Geamuri electrice",
+        "electric_mirrors": "Oglinzi electrice",
+        "heated_seats": "Scaune încălzite",
+        "navigation": "Sistem navigație",
+        "bluetooth": "Bluetooth",
+        "parking_sensors": "Senzori parcare",
+        "cruise_control": "Cruise control",
+        "led_lights": "Faruri LED",
+        "sunroof": "Trapă",
+        "alloy_wheels": "Jante aliaj",
+        "airbags": "Airbag-uri",
+        "keyless": "Keyless entry",
+        "start_stop": "Start/Stop",
+        "fog_lights": "Faruri de ceață"            
+      },
+
+      "images": {
+        "front": "Vedere față",
+        "rear": "Vedere spate",
+        "side_left": "Lateral stânga",
+        "side_right": "Lateral dreapta",
+        "interior_front": "Interior față",
+        "interior_rear": "Interior spate",
+        "dashboard": "Bord",
+        "trunk": "Portbagaj",
+        "engine": "Compartiment motor"
+      }
+    },
+    
+    "carDetails": {
+      "backToInventory": "Înapoi la Parc Auto",
+      "description": "Descriere Vehicul",
+      "features": "Caracteristici & Echipamente",
+      "contactUs": "Contactează-ne",
+      "callUs": "Sună-ne",
+      "whatsappMessage": "Sunt interesat de",
+      "noImages": "Nu există imagini disponibile",
+      "errorFetching": "Eroare la încărcarea detaliilor vehiculului. Vă rugăm să încercați din nou.",
+      "notFound": "Vehiculul nu a fost găsit."
+    },
+    
+    "contact": {
+      "title": "Contactează-ne",
+      "subtitle": "Suntem aici pentru a te ajuta cu orice întrebări ai avea",
+      "formTitle": "Trimite-ne un Mesaj",
+      "infoTitle": "Informații de Contact",
+      "name": "Nume",
+      "email": "Email",
+      "phone": "Telefon",
+      "message": "Mesaj",
+      "gdprConsent": "Sunt de acord ca AUTO ONE să proceseze datele mele personale conform Politicii de Confidențialitate",
+      "gdprRequired": "Te rugăm să accepți politica de confidențialitate înainte de a trimite",
+      "send": "Trimite Mesaj",
+      "sending": "Se trimite...",
+      "successMessage": "Mulțumim! Mesajul tău a fost trimis cu succes. Te vom contacta în curând.",
+      "sendError": "Eroare la trimiterea mesajului. Te rugăm să încerci mai târziu.",
+      "address": "Adresă",
+      "phoneTitle": "Telefon",
+      "emailTitle": "Email",
+      "hours": "Program de Lucru",
+      "weekdays": "Luni-Vineri",
+      "saturday": "Sâmbătă",
+      "sunday": "Duminică",
+      "closed": "Închis",
+      "findUs": "Găsește-ne"
+    },
+    
+    "admin": {
+      "title": "Panou Administrare",
+      "loginTitle": "Autentificare Admin",
+      "email": "Email",
+      "password": "Parolă",
+      "login": "Autentificare",
+      "loggingIn": "Se autentifică...",
+      "loginError": "Email sau parolă invalidă",
+      "logout": "Deconectare",
+      "cars": "Gestionare Mașini",
+      "messages": "Mesaje",
+      "carsList": "Listă Mașini",
+      "messagesList": "Listă Mesaje",
+      "noCars": "Nu există încă mașini în inventar",
+      "noMessages": "Nu există încă mesaje",
+      "addCar": "Adaugă Mașină Nouă",
+      "editCar": "Editează Mașină",
+      "imagesInfo": "Imagini (un URL pe linie)",
+      "imagesPlaceholder": "https://exemplu.ro/imagine1.jpg\nhttps://exemplu.ro/imagine2.jpg",
+      "save": "Salvează",
+      "saving": "Se salvează...",
+      "cancel": "Anulează",
+      "edit": "Editează",
+      "delete": "Șterge",
+      "actions": "Acțiuni",
+      "confirmDelete": "Ești sigur că vrei să ștergi această mașină?",
+      "fetchError": "Eroare la preluarea datelor. Te rugăm să încerci din nou.",
+      "saveError": "Eroare la salvarea mașinii. Te rugăm să încerci din nou.",
+      "deleteError": "Eroare la ștergerea mașinii. Te rugăm să încerci din nou."
+    }
+  }

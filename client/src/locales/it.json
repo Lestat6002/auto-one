@@ -1,0 +1,179 @@
+{
+    "footer": {
+      "tagline": "Il tuo partner di fiducia per auto usate premium in Italia e in tutta Europa",
+      "navigation": "Navigazione",
+      "contactInfo": "Informazioni di Contatto",
+      "businessHours": "Orari di Apertura",
+      "rightsReserved": "Tutti i diritti riservati.",
+      "privacyPolicy": "Politica sulla Privacy",
+      "terms": "Termini e Condizioni",
+      "cookiePolicy": "Politica sui Cookie"
+    },
+    
+    "navbar": {
+      "home": "Home",
+      "inventory": "Parco Auto",
+      "contact": "Contatti"
+    },
+    
+    "home": {
+      "hero": {
+        "title": "Trova l'Auto Perfetta",
+        "subtitle": "Selezione premium di auto usate di qualità ai migliori prezzi",
+        "cta": "Scopri il Parco Auto"
+      },
+      "about": {
+        "title": "Chi Siamo",
+        "subtitle": "Il tuo partner di fiducia nella ricerca dell'auto perfetta",
+        "description1": "Fondata da Alessandro con la passione per i veicoli di qualità, AUTO ONE fornisce auto usate premium ai clienti in tutta Italia ed Europa da oltre 15 anni.",
+        "description2": "Selezioniamo e controlliamo attentamente ogni veicolo nel nostro inventario per garantire che soddisfi i nostri elevati standard di qualità, affidabilità e valore.",
+        "contact": "Contattaci"
+      },
+      "featured": {
+        "title": "Veicoli in Evidenza",
+        "subtitle": "Esplora la nostra selezione premium di veicoli",
+        "viewAll": "Vedi Tutti i Veicoli"
+      },
+      "whyChoose": {
+        "title": "Perché Sceglierci",
+        "subtitle": "Offriamo più che semplici auto",
+        "feature1": {
+          "title": "Qualità Garantita",
+          "description": "Ogni veicolo subisce un'ispezione approfondita prima di entrare nel nostro inventario"
+        },
+        "feature2": {
+          "title": "Servizio Esperto",
+          "description": "Il nostro personale qualificato fornisce assistenza personalizzata per soddisfare le tue esigenze"
+        },
+        "feature3": {
+          "title": "Copertura Garanzia",
+          "description": "Tranquillità con le nostre opzioni di garanzia complete"
+        }
+      },
+      "cta": {
+        "title": "Pronto a Trovare la Tua Prossima Auto?",
+        "subtitle": "Esplora il nostro vasto inventario e trova la corrispondenza perfetta per le tue esigenze",
+        "button": "Esplora il Parco Auto"
+      }
+    },
+    
+    "inventory": {
+      "title": "Il Nostro Parco Auto",
+      "subtitle": "Esplora la nostra selezione di auto usate di qualità",
+      "errorFetching": "Errore nel caricamento dei veicoli. Riprova.",
+      "noResults": "Nessun veicolo corrisponde ai tuoi criteri. Modifica i filtri.",
+      "resultsCount": "{{count}} veicoli trovati",
+      "filters": {
+        "title": "Filtri",
+        "brand": "Marca",
+        "allBrands": "Tutte le Marche",
+        "year": "Anno",
+        "price": "Prezzo",
+        "mileage": "Chilometraggio",
+        "min": "Min",
+        "max": "Max",
+        "apply": "Applica Filtri",
+        "reset": "Resetta",
+        "allFuels": "Tutti i tipi di carburante",
+        "allTransmissions": "Tutte le trasmissioni",
+        "fuel": "Carburante",
+        "transmission": "Trasmissione",
+        "all": "Tutti",
+        "petrol": "Benzina",
+        "diesel": "Diesel",
+        "electric": "Elettrico",
+        "hybrid": "Ibrido",
+        "manual": "Manuale",
+        "automatic": "Automatico"
+      },
+      "sort": {
+        "newest": "Più Recenti",
+        "priceAsc": "Prezzo: Crescente",
+        "priceDesc": "Prezzo: Decrescente"
+      }
+    },
+    
+    "car": {
+      "id": "ID",
+      "title": "Titolo",
+      "brand": "Marca",
+      "price": "Prezzo",
+      "year": "Anno",
+      "mileage": "Chilometraggio",
+      "fuel": "Carburante",
+      "transmission": "Cambio",
+      "power": "Potenza",
+      "color": "Colore",
+      "description": "Descrizione",
+      "viewDetails": "Vedi Dettagli"
+    },
+    
+    "carDetails": {
+      "backToInventory": "Torna al Parco Auto",
+      "description": "Descrizione Veicolo",
+      "features": "Caratteristiche & Equipaggiamento",
+      "contactUs": "Contattaci",
+      "callUs": "Chiamaci",
+      "whatsappMessage": "Sono interessato a",
+      "noImages": "Nessuna immagine disponibile",
+      "errorFetching": "Errore nel caricamento dei dettagli del veicolo. Riprova.",
+      "notFound": "Veicolo non trovato."
+    },
+    
+    "contact": {
+      "title": "Contattaci",
+      "subtitle": "Siamo qui per aiutarti con qualsiasi domanda tu possa avere",
+      "formTitle": "Inviaci un Messaggio",
+      "infoTitle": "Informazioni di Contatto",
+      "name": "Nome",
+      "email": "Email",
+      "phone": "Telefono",
+      "message": "Messaggio",
+      "gdprConsent": "Acconsento a AUTO ONE di elaborare i miei dati personali secondo la Privacy Policy",
+      "gdprRequired": "Accetta la privacy policy prima di inviare",
+      "send": "Invia Messaggio",
+      "sending": "Invio in corso...",
+      "successMessage": "Grazie! Il tuo messaggio è stato inviato con successo. Ti risponderemo presto.",
+      "sendError": "Errore nell'invio del messaggio. Riprova più tardi.",
+      "address": "Indirizzo",
+      "phoneTitle": "Telefono",
+      "emailTitle": "Email",
+      "hours": "Orari di Apertura",
+      "weekdays": "Lunedì-Venerdì",
+      "saturday": "Sabato",
+      "sunday": "Domenica",
+      "closed": "Chiuso",
+      "findUs": "Dove Siamo"
+    },
+    
+    "admin": {
+      "title": "Pannello Amministratore",
+      "loginTitle": "Accesso Amministratore",
+      "email": "Email",
+      "password": "Password",
+      "login": "Accedi",
+      "loggingIn": "Accesso in corso...",
+      "loginError": "Email o password non validi",
+      "logout": "Esci",
+      "cars": "Gestisci Auto",
+      "messages": "Messaggi",
+      "carsList": "Lista Auto",
+      "messagesList": "Lista Messaggi",
+      "noCars": "Nessuna auto nell'inventario",
+      "noMessages": "Nessun messaggio",
+      "addCar": "Aggiungi Nuova Auto",
+      "editCar": "Modifica Auto",
+      "imagesInfo": "Immagini (un URL per riga)",
+      "imagesPlaceholder": "https://esempio.com/immagine1.jpg\nhttps://esempio.com/immagine2.jpg",
+      "save": "Salva",
+      "saving": "Salvataggio...",
+      "cancel": "Annulla",
+      "edit": "Modifica",
+      "delete": "Elimina",
+      "actions": "Azioni",
+      "confirmDelete": "Sei sicuro di voler eliminare questa auto?",
+      "fetchError": "Errore nel recupero dei dati. Riprova.",
+      "saveError": "Errore nel salvataggio dell'auto. Riprova.",
+      "deleteError": "Errore nell'eliminazione dell'auto. Riprova."
+    }
+  }
