@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/auto-one/static/css/main.fa1605d8.css",
+    "main.js": "/auto-one/static/js/main.2de43eb2.js",
+    "static/js/453.f155e2d7.chunk.js": "/auto-one/static/js/453.f155e2d7.chunk.js",
+    "static/media/cta-lite.jpg": "/auto-one/static/media/cta-lite.83eedf6cec3ea4dc9c79.jpg",
+    "static/media/hero-lite.jpg": "/auto-one/static/media/hero-lite.70d8eaa0d3413a4ac581.jpg",
+    "static/media/hero-bg.jpg": "/auto-one/static/media/hero-bg.6d2189ce0778c848df2f.jpg",
+    "static/media/cta-bg.jpg": "/auto-one/static/media/cta-bg.83ab114faa1ffcf60f70.jpg",
+    "static/media/logo-white.png": "/auto-one/static/media/logo-white.622339046052ef7b2c65.png",
+    "static/media/logo.png": "/auto-one/static/media/logo.622339046052ef7b2c65.png",
+    "static/media/maps.png": "/auto-one/static/media/maps.2bfb22a3313ffe14112a.png",
+    "static/media/about-showroom.jpg": "/auto-one/static/media/about-showroom.8c42137483bd3351c5c7.jpg",
+    "index.html": "/auto-one/index.html",
+    "main.fa1605d8.css.map": "/auto-one/static/css/main.fa1605d8.css.map",
+    "main.2de43eb2.js.map": "/auto-one/static/js/main.2de43eb2.js.map",
+    "453.f155e2d7.chunk.js.map": "/auto-one/static/js/453.f155e2d7.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fa1605d8.css",
+    "static/js/main.2de43eb2.js"
+  ]
+}
